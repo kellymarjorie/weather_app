@@ -1,0 +1,60 @@
+body {
+    background: #4DC3C3;
+}
+
+.center-block {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.weather_icon {
+    font-size: 170px;
+    color: #fcfcf9;
+}
+
+.main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #FE9299;
+    border: 5px solid #FBFAFB;
+    border-radius: 70px;
+    box-shadow: 10px 10px 10px #53383C;
+    font-family: 'Raleway', sans-serif;
+    color: #53383C;
+}
+
+.temp-font {
+    padding-left: 50px;
+    font-size: 140px;
+    color: #fcfcf9;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#currentTime {
+    font-size: 30px;
+}
+
+.mainBottom {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.btn-default {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .btn-default:visited, .btn-default:active:hover, .btn-default.active:hover {
+    border:none;
+    background-color: transparent;
+    outline: none !important;
+}
+
+.activeTemp {
+    color: #7A8BC2 !important;
+}

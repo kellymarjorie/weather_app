@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Local Weather Webapp</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
+        <link rel='stylesheet' href='style.css'> <!-- local css -->
+        <link href="https://fonts.googleapis.com/css?family=Dosis:800|Raleway" rel="stylesheet">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <div class='container'>
+        <div class='row text-center center-block'>
+
+            <div class='col-md-3'></div>
+
+            <div class='col-md-6 col-sm-6 main'>
+
+                <h1><span id='cityName'>Nagoya</span>, <span id='countryName'>JP</span></h1>
+                <p class='lead'><span id='currentTime'>00:00</span></p>
+                <div class='row'>
+                    <div class='col-sm-6 col-xs-6'>
+                        <span class='temp-font'><span id='tempCurrent'>0</span>&deg;</span><br>
+                        <button id='celButton' class='btn btn-default activeTemp'>C&deg; </button> <i class='glyphicon glyphicon-transfer' aria-hidden='true'></i> <button id='farButton' class='btn btn-default'> F&deg;</button>
+                    </div>
+                    <div class='col-sm-6 col-xs-6'>
+                        <div class='weather_icon'><i class='weatherIcon' aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-sm-6 col-xs-6'>
+                        <p>Humidity: <span id='humidity'>0</span>%</p>
+                        <p>Wind Speed: <span id='wSpeed'>0</span>km/h</p>
+                    </div>
+                    <div class='col-sm-6 col-xs-6'>
+                        <p><span id='wDesc'>Look out the window!</span></p>                            <p>Cloudiness: <span id='clouds'>0</span>%</p>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-sm-12 col-xs-12 mainBottom'>
+                        <p class='lead'>Sunrise: <span id='sunrise'>00:00</span> - Sunset: <span id='sunset'>00:00</span></p>
+                    </div>
+                </div>
+
+            </div> <!-- end main column -->
+
+            <div class='col-md-3'></div>
+
+        </div> <!-- row end -->
+    </div> <!-- container end -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+
+</html>
