@@ -1,32 +1,33 @@
 body {
-    background: #4DC3C3;
+    background: #FBF1F5;
+    overflow: hidden;
 }
 
 .center-block {
-    padding-top: 70px;
+    padding-top: 80px;
     padding-bottom: 70px;
 }
 
 .weather_icon {
     font-size: 170px;
-    color: #fcfcf9;
+    color: #393B3D;
 }
 
 .main {
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #FE9299;
-    border: 5px solid #FBFAFB;
-    border-radius: 70px;
-    box-shadow: 10px 10px 10px #53383C;
+    background: #EDA5D6;
+    /* border: 5px solid #626F96; */
+    border-radius: 30px;
+    box-shadow: 5px 10px 10px #F3DBE8;
     font-family: 'Raleway', sans-serif;
-    color: #53383C;
+    color: #515E63;
 }
 
 .temp-font {
     padding-left: 50px;
     font-size: 140px;
-    color: #fcfcf9;
+    color: #393B3D;
 }
 
 h1 {
@@ -56,5 +57,86 @@ h1 {
 }
 
 .activeTemp {
-    color: #7A8BC2 !important;
+    color: #393B3D !important;
+}
+
+.bubble {
+    border-radius: 50%;
+    position: fixed;
+    -webkit-transition: width 2s, height 2s;
+    transition: transform 2s, top 2s;
+}
+
+.bubble:hover {
+    width: 50%;
+    height: 50%;
+}
+
+@media (max-width: 62.2em) {
+.bubble {
+        visibility:hidden;
+    }
+}
+
+.bubble1 {
+    background-color: #393B3D; 
+    opacity: 0.2;
+    height: 230px;
+    width: 230px;   
+    left: 20%;
+    top: 8%;
+}
+
+.bubble2 {
+    background-color: #4C4477;
+    opacity: 0.6;
+    height: 75px;
+    width: 75px;
+    left: 26.5%;
+    top: 33%;
+}
+
+.bubble3 {
+    background-color: #F6A66B;
+    opacity: 0.3;
+    height: 160px;
+    width: 160px;
+    left: 27%;
+    top: 6%;
+}
+
+.bubble4 {
+    background-color: #F6A66B;
+    opacity: 0.55;
+    height: 270px;
+    width: 270px;
+    left: 19%;
+    top: 37%;
+}
+
+.bubble5 {
+    background-color: #E94F6C;
+    opacity: 0.4;
+    height: 120px;
+    width: 120px;
+    left: 25%;
+    top: 64%;
+}
+
+.bubble6 {
+    background-color: #D3482D;
+    opacity: 0.2;
+    height: 120px;
+    width: 120px;
+    top: 3%;
+    left: 34%;
+}
+
+.bubble7 {
+    background-color: #4C4477;
+    opacity: 0.4;
+    height: 260px;
+    width: 260px;
+    top: 2.5%;
+    left: 35%;
 }
