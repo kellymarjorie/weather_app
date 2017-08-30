@@ -19,7 +19,7 @@ body {
     background: #EDA5D6;
     /* border: 5px solid #626F96; */
     border-radius: 30px;
-    box-shadow: 5px 10px 10px #F3DBE8;
+    
     font-family: 'Raleway', sans-serif;
     color: #515E63;
 }
@@ -58,24 +58,33 @@ h1 {
 
 .activeTemp {
     color: #393B3D !important;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .bubble {
     border-radius: 50%;
     position: fixed;
-    -webkit-transition: width 2s, height 2s;
-    transition: transform 2s, top 2s;
-}
-
-.bubble:hover {
-    width: 50%;
-    height: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
 }
 
 @media (max-width: 62.2em) {
 .bubble {
         visibility:hidden;
     }
+}
+
+.bubble:hover,
+.bubble:focus,
+.bubble:active {
+    transform: scale(1.1);
 }
 
 .bubble1 {
@@ -124,7 +133,7 @@ h1 {
 }
 
 .bubble6 {
-    background-color: #D3482D;
+    background-color: #E94F6C;
     opacity: 0.2;
     height: 120px;
     width: 120px;
@@ -139,4 +148,40 @@ h1 {
     width: 260px;
     top: 2.5%;
     left: 35%;
+}
+
+.bubble8 {
+    background-color: #E94F6C;
+    opacity: 0.3;
+    height: 300px;
+    width: 300px;
+    bottom: 18%;
+    right: 20%;
+}
+
+.bubble9 {
+    background-color: #4c4477;
+    opacity: 0.4;
+    height: 260px;
+    width: 260px;
+    bottom: 2%;
+    right: 23%;
+}
+
+.bubble10 {
+    background-color: #F6A66B;
+    opacity: 0.6;
+    height: 70px;
+    width: 70px;
+    bottom: 5%;
+    right: 38%;
+}
+
+.bubble11 {
+    background-color: #393B3D;
+    opacity: 0.4;
+    height: 130px;
+    width: 130px;
+    bottom: 15%;
+    right: 19%;
 }
